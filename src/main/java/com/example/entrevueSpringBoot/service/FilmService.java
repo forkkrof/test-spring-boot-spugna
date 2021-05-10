@@ -2,7 +2,6 @@ package com.example.entrevueSpringBoot.service;
 
 import java.util.Optional;
 
-import com.example.entrevueSpringBoot.model.Acteur;
 import com.example.entrevueSpringBoot.model.Film;
 import com.example.entrevueSpringBoot.repository.FilmRepository;
 import com.example.entrevueSpringBoot.utils.FormatFilm;
