@@ -2,8 +2,10 @@ package com.example.entrevueSpringBoot.service;
 
 import java.util.Optional;
 
+import com.example.entrevueSpringBoot.model.Acteur;
 import com.example.entrevueSpringBoot.model.Film;
 import com.example.entrevueSpringBoot.repository.FilmRepository;
+import com.example.entrevueSpringBoot.utils.FormatFilm;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -21,7 +23,7 @@ public class FilmService implements IFilmService {
     @Override
     public Optional<Film> ajouterFilm(Film film) {
         log.info("Service: ajouter un film {}", film.toString());
-        Film filmCree = this.repo.save(film);
+        Film filmCree = this.repo.save(FormatFilm.trimAndLowerCase(film));
         return Optional.ofNullable(filmCree);
     }
 

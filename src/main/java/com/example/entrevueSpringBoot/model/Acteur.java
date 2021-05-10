@@ -36,6 +36,14 @@ public class Acteur {
         return prenom;
     }
 
+    public void setNom(String nom) {
+        this.nom = nom;
+    }
+
+    public void setPrenom(String prenom) {
+        this.prenom = prenom;
+    }
+
     @Override
     public String toString() {
         return "Acteur [id=" + id + ", nom=" + nom + ", prenom=" + prenom + "]";

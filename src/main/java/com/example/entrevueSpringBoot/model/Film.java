@@ -48,6 +48,18 @@ public class Film {
         return this.acteurs;
     }
 
+    public void setTitre(String titre) {
+        this.titre = titre;
+    }
+
+    public void setDescription(String description) {
+        this.description = description;
+    }
+
+    public void setActeurs(List<Acteur> acteurs) {
+        this.acteurs = acteurs;
+    }
+
     @Override
     public String toString() {
         return "Film [acteurs=" + acteurs + ", description=" + description + ", id=" + id + ", titre=" + titre + "]";
